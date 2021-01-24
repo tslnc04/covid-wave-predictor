@@ -1,0 +1,4 @@
+plots/
+neural_checkpoint.h5
+counties_data.json
+.mypy_cache

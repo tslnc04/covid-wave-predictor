@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>covid-wave-predictor</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <h1>Covid Wave Prediction</h1>
+
+        <main>
+            <svg width="975" height="720" id="map"></svg>
+            <div id="right">
+                <h2>How does it work?</h2>
+                <p>
+                    An AI has been trained on the hundreds of thousands of
+                    county-level data points available from the
+                    <a href="https://github.com/nytimes/covid-19-data"
+                        >New York Times</a
+                    >
+                    to recognize when a wave of COVID is about to hit. The
+                    percentages represent the probability of an imminent COVID
+                    wave. For this purpose, a COVID wave is when the 7-day
+                    moving average of daily new cases is 5% higher after 14
+                    days. That means if the moving average of cases is 5% higher
+                    two weeks from now then today would be classified as having
+                    an imminent COVID wave.
+                </p>
+                <h2>County Lookup</h2>
+                <p>
+                    Lookup uses the FIPS code for each county, which is
+                    different from the more common ZIP codes used by the postal
+                    service, so search by the county and state name.
+                </p>
+                <input
+                    type="text"
+                    id="lookup"
+                    list="counties"
+                    placeholder="District of Columbia, e.g."
+                />
+                <input type="submit" id="submit-lookup" />
+                <p id="lookup-output"></p>
+
+                <h2>Credits</h2>
+                <ul>
+                    <li>
+                        COVID-19 data from the
+                        <a href="https://github.com/nytimes/covid-19-data"
+                            >New York Times</a
+                        >
+                    </li>
+                    <li>
+                        Map from the
+                        <a
+                            href="https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html"
+                            >Census Bureau</a
+                        >
+                    </li>
+                    <li>
+                        Built during the
+                        <a href="https://unihacks.ncssm.edu">UniHacks</a>
+                        hackathon
+                    </li>
+                </ul>
+
+                <h2>Source Code</h2>
+                <p>
+                    Available on GitHub at
+                    <a href="https://github.com/tslnc04/covid-wave-predictor"
+                        >tslnc04/covid-wave-predictor</a
+                    >.
+                </p>
+            </div>
+        </main>
+
+        <footer>Copyright 2021 Timothy Laskoski. Licensed under MIT.</footer>
+
+        <datalist id="counties"></datalist>
+
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://unpkg.com/topojson@3"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
