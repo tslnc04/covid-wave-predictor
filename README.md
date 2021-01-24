@@ -38,6 +38,7 @@ website, but those are loaded by the page since NodeJS is not used.
 
 - Tensorflow v2.3.1 using CUDA
 - Python 3.8.3
+- NumPy 1.18.5
 
 ## Credits
 

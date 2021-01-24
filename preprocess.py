@@ -5,7 +5,6 @@ import json
 from io import StringIO
 
 import urllib.request
-from scipy import stats
 
 # Link to the NYT data
 data_url = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv'
