@@ -65,7 +65,7 @@ windows_one = []
 for county_data in counties_data.values():
     data = np.loadtxt(StringIO(county_data), delimiter=',')
     # The last 14 days of data are ignored since the retroactively applied
-    # labels for whether there is an imminent wave need 14 days. The last 7 will
+    # labels for whether there is an imminent wave need 14 days. The last 14 will
     # eventually be used for prediction.
 
     county_windows_zero = []

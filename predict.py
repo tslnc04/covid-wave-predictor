@@ -26,8 +26,8 @@ windows = []
 
 for county_data in counties_data.values():
     data = np.loadtxt(StringIO(county_data), delimiter=',')
-    # Rather than have multiple windows from one county for training, the last 7
-    # days of data is used in each county for prediction
+    # Rather than have multiple windows from one county for training, the last
+    # 14 days of data is used in each county for prediction
     windows.append(np.array(data[-14:]))
 
 windows = np.array(windows)
