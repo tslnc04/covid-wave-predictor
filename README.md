@@ -14,7 +14,7 @@ of daily new cases 14 days after a given date.
 ## Usage
 
 A demo of the website is available on
-[Netlify](covid-wave-predictor.netlify.app). Additionally, a pre-trained keras
+[Netlify](https://covid-wave-predictor.netlify.app). Additionally, a pre-trained keras
 model is provided on GitHub at
 [`TrainedModel.h5`](https://github.com/tslnc04/covid-wave-predictor/blob/master/TrainedModel.h5).
 To use this model for predictions rather than the one generated during training,
