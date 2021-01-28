@@ -1,6 +1,6 @@
 # covid-wave-predictor
 
-Predicts incoming waves in COVID-19 cases at the county level in the U.S.
+Predicts incoming waves in COVID-19 cases at the county level in the U.S. Built for [UniHacks 2021](https://unihacks.ncssm.edu/).
 
 ## What?
 
@@ -10,6 +10,10 @@ predictions for each county.
 
 An imminent COVID wave is defined as a 5% increase in the 7-day moving average
 of daily new cases 14 days after a given date.
+
+### UniHacks 2021
+
+This project was a submission to the UniHacks hackathon. It was selected as the best in the digital health track and also the winner of best beginner hack.
 
 ## Usage
 
